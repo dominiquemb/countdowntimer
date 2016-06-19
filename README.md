@@ -3,22 +3,22 @@ JQuery countdown timer
 
 Basic usage:
 
-  var timeobj = {
+   var timeobj = {
     seconds: 10,
     // minutes: 5,
     // hours: 1
-  };
+   };
 
-  var countdown = new DigitalTimer({
+   var countdown = new DigitalTimer({
     selector: '#digital-timer',
     hours: timeobj.hours,
     minutes: timeobj.minutes,
     seconds: timeobj.seconds,
     /* showSeconds can be either true or false */
     showSeconds: false
-  });
+   });
   
-  Advanced usage:
+Advanced usage:
   
   var timeobj = {
     seconds: 10,
@@ -80,4 +80,4 @@ Basic usage:
         countdown.refreshUI();
       }
     }
-  });
+   });
