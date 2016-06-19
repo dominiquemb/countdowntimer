@@ -17,29 +17,30 @@ Basic usage:
      /* showSeconds can be either true or false */
      showSeconds: false
     });
+    
   
 Advanced usage:
-  
+
     var timeobj = {
      seconds: 10,
      // minutes: 5,
      // hours: 1
-   };
+     };
   
-   var countdown = new DigitalTimer({
-    selector: '#digital-timer',
-    hours: timeobj.hours,
-    minutes: timeobj.minutes,
-    seconds: timeobj.seconds,
-    /* showSeconds can be either true or false */
-    showSeconds: false,
-    /* The callback defined below runs when the countdown timer has ended */
-    callback: function() {
-     var modal = jQuery("#time-limit-reached");
-     // Find the modal's <div class="modal-body"> so we can populate it
-     var modalBody = jQuery('#time-limit-reached .modal-body');
+     var countdown = new DigitalTimer({
+      selector: '#digital-timer',
+      hours: timeobj.hours,
+      minutes: timeobj.minutes,
+      seconds: timeobj.seconds,
+      /* showSeconds can be either true or false */
+      showSeconds: false,
+      /* The callback defined below runs when the countdown timer has ended */
+      callback: function() {
+       var modal = jQuery("#time-limit-reached");
+       // Find the modal's <div class="modal-body"> so we can populate it
+       var modalBody = jQuery('#time-limit-reached .modal-body');
 
-     modal.find('.dismiss').click(function() {
+       modal.find('.dismiss').click(function() {
        modal.modal('hide');
      });
 
@@ -80,4 +81,4 @@ Advanced usage:
         countdown.refreshUI();
       }
     }
-   });
+    });
