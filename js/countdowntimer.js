@@ -164,6 +164,11 @@ jQuery(document).ready(function() {
       this.setCountdown(this.timerSettings);
     };
 
+    this.elapsedTimerStart = function() {
+      this.resetTimer();
+      this.setTimer();
+    };
+
     this.refreshUI = function() {
       if (!this.timerSettings.seconds || !this.timerSettings.showSeconds) {
         jQuery(this.timerSettings.selector).addClass('no-seconds');
