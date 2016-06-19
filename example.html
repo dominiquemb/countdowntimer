@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<head>
+  <title>Countdown Timer Demo</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous">
+  </script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/countdowntimer.js"></script>
+  <script type="text/javascript" src="js/example.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/timer.css" />
+</head>
+<body>
+  <div class="digital-timer clearfix countdown-timer">
+    <div class="time-remaining">Time Remaining</div>
+    <div class="time-wrap"></div>
+    <div id="digital-timer">
+      <div class="hours-remaining-container time"><span class="amount hours-remaining"></span><span class="label">HOURS</span></div>
+      <div class="minutes-remaining-container time"><span class="amount minutes-remaining"></span><span class="label">MINUTES</span></div>
+      <div class="seconds-remaining-container time"><span class="amount seconds-remaining"></span><span class="label">SECONDS</span></div>
+    </div>
+  </div>
+
+  <!-- Time Limit Modal -->
+  <div id="time-limit-reached" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close dismiss" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id="termsLabel" class="modal-title"></h3>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        You have run out of time!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn dismiss" data-dismiss="modal" aria-hidden="true">OK</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+
+</body>

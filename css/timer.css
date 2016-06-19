@@ -1,0 +1,158 @@
+.digital-timer {
+  width: 125px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.no-seconds .minutes-elapsed-container {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.no-seconds .hours-elapsed-container {
+  text-align: center;
+  margin-left: 19px;
+}
+
+.seconds-elapsed-container.time {
+  margin-left: 10px;
+}
+
+.digital-timer {
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 119px;
+}
+.digital-timer.countdown-timer  {
+  border: 1px solid #cccccc;
+  padding: 0 0 4px 0;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#digital-timer {
+ text-align: center;
+}
+#digital-timer.no-seconds .seconds-elapsed-container {
+  display: none;
+}
+#digital-timer.no-minutes .minutes-elapsed-container {
+  display: none;
+}
+#digital-timer.no-hours .hours-elapsed-container {
+  display: none;
+}
+#digital-timer.no-seconds .seconds-remaining-container {
+  display: none;
+}
+#digital-timer.no-minutes .minutes-remaining-container {
+  display: none;
+}
+#digital-timer.no-hours .hours-remaining-container {
+  display: none;
+}
+
+#digital-timer {
+  font-size: 9px;
+}
+.pause-timer {
+  border: 0;
+  outline: none;
+  background: url('img/pause.png') no-repeat;
+  width: 17px;
+  height: 15px;
+  text-indent: -3000px;
+  overflow: hidden;
+  margin-top: -1px;
+  margin-right: -1px;
+  vertical-align: sub;
+  float: right;
+}
+
+.unpause-timer {
+  border: 0;
+  outline: none;
+  background: url('img/play.png') no-repeat;
+  width: 222px;
+  height: 74px;
+  text-indent: -3000px;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -111px;
+  margin-top: -37px;
+  position: fixed;
+  top: 50%;
+}
+
+.time-elapsed,
+.time-remaining {
+  font-size: 10px;
+  background-color: #cccccc;
+  color: #333;
+  margin-bottom: 3px;
+}
+.almost-done .time-remaining {
+  background-color: #f8e1e1;
+}
+.time {
+  line-height: 1.2em;
+  float: left;
+  padding-top: 2px;
+}
+.no-hours .minutes-elapsed-container {
+  text-align: center;
+  margin-left: 8px;
+}
+.no-hours .seconds-elapsed-container {
+  text-align: center;
+}
+.no-seconds .hours-remaining-container,
+.no-seconds .hours-elapsed-container {
+  margin-left: 10px;
+}
+.no-seconds .minutes-remaining-container,
+.no-seconds .minutes-elapsed-container {
+  float: none;
+}
+.no-hours .minutes-remaining-container {
+  margin-left: 10px;
+}
+.no-hours.no-minutes .seconds-remaining-container,
+.no-hours.no-minutes .seconds-elapsed-container {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+span.amount {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.almost-done span.amount {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: #f85352;
+}
+#digital-timer .label {
+  color: #333;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  display: block;
+}
+
+.time-wrap {
+  position: absolute;
+  height: 32px;
+  width: 119px;
+  top: 15px;
+}
+
+
